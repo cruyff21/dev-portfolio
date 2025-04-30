@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -51,11 +50,11 @@ const Contact = () => {
                 <div className="p-3 rounded-full bg-muted/20 group-hover:bg-primary/20 transition-colors">
                   <Mail className="w-5 h-5" />
                 </div>
-                <span className="link-underline">contato@developerbackend.com</span>
+                <span className="link-underline">victor.ebaia@hotmail.com</span>
               </a>
               
               <a 
-                href="https://www.linkedin.com/in/developerbackend" 
+                href="https://www.linkedin.com/in/victor-estevam-baia/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 group"
@@ -63,21 +62,21 @@ const Contact = () => {
                 <div className="p-3 rounded-full bg-muted/20 group-hover:bg-primary/20 transition-colors">
                   <Linkedin className="w-5 h-5" />
                 </div>
-                <span className="link-underline">linkedin.com/in/developerbackend</span>
+                <span className="link-underline">linkedin.com/in/victor-estevam</span>
               </a>
               
               <a 
-                href="tel:+5511999999999" 
+                href="tel:+5594996633597" 
                 className="flex items-center gap-4 group"
               >
                 <div className="p-3 rounded-full bg-muted/20 group-hover:bg-primary/20 transition-colors">
                   <Phone className="w-5 h-5" />
                 </div>
-                <span className="link-underline">+55 11 99999-9999</span>
+                <span className="link-underline">(94) 9 9663-3597</span>
               </a>
               
               <a 
-                href="https://wa.me/5511999999999" 
+                href="https://wa.me/5594996633597" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 group"

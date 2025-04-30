@@ -9,7 +9,7 @@ const Footer = () => {
               dev<span className="text-primary">.</span>
             </a>
             <p className="text-sm mt-2 text-muted-foreground">
-              Desenvolvendo soluções robustas desde 2020
+              Desenvolvendo soluções robustas desde 2024
             </p>
           </div>
           

@@ -2,20 +2,19 @@
 import { Progress } from '@/components/ui/progress';
 
 const techSkills = [
-  { name: "Node.js", level: 95 },
-  { name: "Python", level: 90 },
-  { name: "SQL (PostgreSQL/MySQL)", level: 85 },
-  { name: "NoSQL (MongoDB/DynamoDB)", level: 80 },
+  { name: "Python", level: 80 },
+  { name: "SQL (PostgreSQL/MySQL)", level: 60 },
+  { name: "NoSQL (MongoDB/DynamoDB)", level: 55 },
   { name: "Docker/Kubernetes", level: 75 },
-  { name: "CI/CD (Jenkins/GitHub Actions)", level: 85 },
-  { name: "AWS/Cloud", level: 80 },
-  { name: "REST/GraphQL APIs", level: 90 }
+  { name: "CI/CD (Jenkins/GitHub Actions)", level: 30 },
+  { name: "AWS/Cloud", level: 40 },
+  { name: "REST/GraphQL APIs", level: 75 }
 ];
 
 const toolsAndFrameworks = [
-  "Express.js", "FastAPI", "Django", "Flask", 
-  "Spring Boot", "Sequelize", "TypeORM", "Prisma",
-  "Jest", "Pytest", "Terraform", "Git"
+  "Express.js", "Node.js", "Selenium", "PostgreSQL", 
+  "MongoDB", "Firebase", "Git & Github", "EC2",
+  "Nginx", "PM2"
 ];
 
 const Skills = () => {

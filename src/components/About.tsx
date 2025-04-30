@@ -8,27 +8,27 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="animate-fade-in">
             <p className="text-lg mb-6">
-              Sou um desenvolvedor backend apaixonado por criar soluções robustas e escaláveis. Com experiência em desenvolvimento de APIs, arquitetura de sistemas e otimização de bancos de dados, meu foco é construir o coração das aplicações - a parte que os usuários não veem, mas que sustenta todo o sistema.
+              Meu nome é Victor, sou um desenvolvedor backend em constante evolução, com foco em automação de processos. Tenho experiência prática no desenvolvimento de APIs, integração entre sistemas, web scraping e uso de bancos de dados como PostgreSQL e MongoDB.
             </p>
             <p className="text-lg mb-6">
-              Minha abordagem combina pensamento analítico com práticas modernas de engenharia de software. Sou adepto de metodologias ágeis, integração contínua e desenvolvimento orientado a testes.
+            Busco escrever códigos simples, organizados e funcionais, sempre seguindo boas práticas. Estou aprendendo cada vez mais sobre arquitetura de sistemas, testes automatizados e metodologias ágeis para melhorar a qualidade das minhas entregas.
             </p>
             <p className="text-lg">
-              Quando não estou codando, estou explorando novas tecnologias, contribuindo para projetos open source ou compartilhando conhecimento com a comunidade de desenvolvimento.
+            Quando não estou desenvolvendo soluções para automatizar tarefas repetitivas, estou estudando novas ferramentas, ajudando outros desenvolvedores ou criando projetos que unem tecnologia e produtividade.
             </p>
           </div>
           
           <div className="order-first md:order-last grid grid-cols-2 gap-4">
             <div className="bg-muted/20 backdrop-blur-sm border border-muted p-6 rounded-lg shadow-sm card-hover">
-              <h3 className="font-mono text-lg font-medium mb-2">3+</h3>
+              <h3 className="font-mono text-lg font-medium mb-2">1+</h3>
               <p className="text-muted-foreground">Anos de experiência</p>
             </div>
             <div className="bg-muted/20 backdrop-blur-sm border border-muted p-6 rounded-lg shadow-sm card-hover">
-              <h3 className="font-mono text-lg font-medium mb-2">25+</h3>
+              <h3 className="font-mono text-lg font-medium mb-2">7+</h3>
               <p className="text-muted-foreground">Projetos concluídos</p>
             </div>
             <div className="bg-muted/20 backdrop-blur-sm border border-muted p-6 rounded-lg shadow-sm card-hover">
-              <h3 className="font-mono text-lg font-medium mb-2">10+</h3>
+              <h3 className="font-mono text-lg font-medium mb-2">4+</h3>
               <p className="text-muted-foreground">Tecnologias dominadas</p>
             </div>
             <div className="bg-muted/20 backdrop-blur-sm border border-muted p-6 rounded-lg shadow-sm card-hover">

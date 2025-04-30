@@ -7,30 +7,30 @@ import { Button } from "@/components/ui/button";
 const projects = [
   {
     id: 1,
-    title: "API de Microservices",
-    description: "Sistema de microserviços com Node.js e Express, utilizando comunicação assíncrona via RabbitMQ.",
-    tags: ["Node.js", "Express", "RabbitMQ", "Docker"],
+    title: "Dashboard de notas fiscais",
+    description: "Desenvolvido com foco em visualização de dados fiscais por empresa e por período. A API foi projetada para consumir dados de bancos de dados PostgreSQL e MongoDB. Já está em produção em uma VM na AWS.",
+    tags: ["Node.js", "Express", "React", "AWS"],
     link: "#"
   },
   {
     id: 2,
-    title: "Sistema de Gestão de Dados",
-    description: "Backend para sistema de gestão empresarial com processamento em tempo real e relatórios customizados.",
-    tags: ["Python", "FastAPI", "PostgreSQL", "Redis"],
+    title: "Serviço ETL de migração de dados SQL Anywhere → PostgreSQL",
+    description: "Desenvolvi um serviço ETL em Python para extrair dados contábeis do SQL Anywhere, transformar e carregar em um banco PostgreSQL. Usei pyodbc e psycopg2, focando em automação, integridade dos dados e performance.",
+    tags: ["Python", "PostgreSQL", "SQL Anywhere"],
     link: "#"
   },
   {
     id: 3,
-    title: "Infraestrutura Serverless",
-    description: "Arquitetura serverless para aplicação de alta escalabilidade com funções lambda e banco NoSQL.",
-    tags: ["AWS Lambda", "DynamoDB", "Terraform", "CloudFormation"],
+    title: "Automação para solicitação de documentos",
+    description: "Desenvolvi uma automação para solicitação de documentos na SEFA, tais como NF-e, NFC-e CT-e.",
+    tags: ["Python", "Selenium", "PostgreSQL"],
     link: "#"
   },
   {
     id: 4,
-    title: "Plataforma de E-commerce",
-    description: "Backend para e-commerce com processamento de pagamentos, gestão de estoque e integração com fornecedores.",
-    tags: ["Java", "Spring Boot", "MySQL", "Kafka"],
+    title: "Aplicativo de agendamento",
+    description: "Estou desenvolvendo um aplicativo de agendamento de serviços de manicures. O aplicativo está sendo desenvolvido em Dart/Flutter com base dados e autenticação no Firebase.",
+    tags: ["Dart", "Flutter", "Firebase"],
     link: "#"
   }
 ];
@@ -66,17 +66,12 @@ const Projects = () => {
                   ))}
                 </div>
               </CardContent>
-              <CardFooter>
-                <Button variant="outline" size="sm" asChild>
-                  <a href={project.link}>Ver detalhes</a>
-                </Button>
-              </CardFooter>
             </Card>
           ))}
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
+          <Button variant="outline" className="border-primary text-primary hover:bg-primary/10" disabled>
             Ver mais projetos
           </Button>
         </div>

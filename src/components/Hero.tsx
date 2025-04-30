@@ -13,7 +13,7 @@ const Hero = () => {
                 <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-primary">Soluções Robustas</span>
               </h1>
               <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                Especialista em arquitetura de sistemas, APIs e bancos de dados. Transformando ideias em serviços escaláveis.
+                Dedicado no desenvolvimento de sistemas e APIs, com foco em entregar soluções funcionais e que gerem valor real.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 min-[400px]:flex-row">
@@ -37,7 +37,7 @@ const Hero = () => {
               <div className="inline-block py-1 px-3 rounded-full border border-muted text-xs md:text-sm">
                 Tecnologias:{" "}
                 <span className="font-mono text-primary">
-                  Node.js, Python, SQL, NoSQL, Docker, AWS
+                  Node.js, Python, SQL, NoSQL, AWS
                 </span>
               </div>
             </div>
