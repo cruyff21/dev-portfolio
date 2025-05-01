@@ -12,7 +12,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://victor-estevam-dev.github.io/portfolio",
+  "homepage": "https://cruyff21.github.io/dev-portfolio",
   
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
