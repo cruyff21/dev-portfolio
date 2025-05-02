@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://cruyff21.github.io/dev-portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,8 +13,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://cruyff21.github.io/dev-portfolio",
-  
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
     "@radix-ui/react-accordion": "^1.2.0",
