@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -6,30 +6,7 @@ import { Mail, Linkedin, Phone, MessageSquare } from 'lucide-react';
 import { toast } from 'sonner';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      toast.success('Mensagem enviada com sucesso!');
-      setFormData({ name: '', email: '', message: '' });
-      setIsSubmitting(false);
-    }, 1000);
-  };
+  const [state, handleSubmit] = useForm("mgvkazvo"); // Substitua pelo seu ID do Formspree
 
   return (
     <section id="contato" className="py-20 px-4">
@@ -95,40 +72,43 @@ const Contact = () => {
                 type="text" 
                 name="name" 
                 placeholder="Nome"
-                value={formData.name}
-                onChange={handleChange}
                 required
                 className="bg-muted/20 border-muted"
               />
+              <ValidationError prefix="Name" field="name" errors={state.errors} />
             </div>
             <div>
               <Input 
                 type="email" 
                 name="email" 
                 placeholder="Email"
-                value={formData.email}
-                onChange={handleChange}
                 required
                 className="bg-muted/20 border-muted"
               />
+              <ValidationError prefix="Email" field="email" errors={state.errors} />
             </div>
             <div>
               <Textarea 
                 name="message" 
                 placeholder="Mensagem"
-                value={formData.message}
-                onChange={handleChange}
                 required
                 className="min-h-[150px] bg-muted/20 border-muted"
               />
+              <ValidationError prefix="Message" field="message" errors={state.errors} />
             </div>
             <Button 
               type="submit" 
               className="w-full bg-primary hover:bg-primary/80"
-              disabled={isSubmitting}
+              disabled={state.submitting}
             >
-              {isSubmitting ? 'Enviando...' : 'Enviar mensagem'}
+              {state.submitting ? 'Enviando...' : 'Enviar mensagem'}
             </Button>
+
+            {state.succeeded && (
+              <p className="text-green-500 text-center mt-4">
+                Mensagem enviada com sucesso!
+              </p>
+            )}
           </form>
         </div>
       </div>
